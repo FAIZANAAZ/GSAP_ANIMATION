@@ -94,33 +94,62 @@
 // agr hmny 2 page bnay hen or hm chahty hen jb scroll bar os page pr ay tb hi animation ho osy phly na ho kr khtam ho jay to hm 
 // sbsy phly gsap cdn sy ak cammand copy krky laygy or script sy link krwaygy  cammand me likha hoga scrol trigger
 
-gsap.from("#s1 #f4",{
-    // "" isky ander hi , ayga
-    scale:0,
-    // isy wo choty sy bara hoga
-    delay:2,
-    duration:2,
-    rotate:360,
-    // scrollTrigger:"#f4 , #f5",
+// gsap.from("#s1 #f4",{
+//     // "" isky ander hi , ayga
+//     scale:0,
+//     // isy wo choty sy bara hoga
+//     delay:2,
+//     duration:2,
+//     rotate:360,
+//     // scrollTrigger:"#f4 , #f5",
 
-    // bs isy wo wb hi animat hoga tb os page pr scrollbar ayga
-    // iski properties bhi hoti hen apni
-    scrollTrigger:{
-        trigger:"#s1 #f4",
-        // ab name yha dena hoga
-        // hmy phly body ko targit krna hoga or phir oski div
-        scroller:"body",
+//     // bs isy wo wb hi animat hoga tb os page pr scrollbar ayga
+//     // iski properties bhi hoti hen apni
+
+//     scrollTrigger:{
+//         trigger:"#s1 #f4",
+//         // ab name yha dena hoga
+//         // hmy phly body ko targit krna hoga or phir oski div
+
+//         scroller:"body",
         
-        markers:true
-        // isy likha ayga ke body ka start point kha he or end kha he 
+//         markers:true,
+
+//         // isy likha ayga ke body ka start point kha he or end kha he 
+//         scrub:true,
+
+//     //    isy ye hoga ke animation agr 5 sec ka he to scrol bar is page pr ayga or animation hogii phir khatm ho jaygi lekin scrub sy hoga ye ke jb tk scrol bar is page sy bahir nikl kr dosry page pr chala nhi jata wo animation khatam nhi hogi
+ 
+//     // scrub ko 1 y5 ke darmiyan number bhi de skty hen isy wo smoot chlyga jitna number dengy otna 
+      
+  
+
+//     // 
+//     }
+
+// })
+
+
+// /////////////////////////////////////////////////////////////////////////
+
+// isy x me wo jayga news ki trha headlines
+gsap.to("#sec2 h1",{
+    transform :'translateX(-50%)',
+    scrollTrigger:{
+        trigger : "#sec2",
+        // jb bhi hm pin krengy koch to os element ke parent ko trigger me rakhengy
+        scroller :"body",
+        markers:true,
+        start:"top 0%",
+        end:"top -100%",
+        // top sy 0 yani jb page pr scroll bar touch hoga to animation chaly gi
+        scrub:2,
+        pin:true
+        // isy ye hoga ke jb tk scrol bar jb chly jayga to animation whi pr rok jaygi or jb dobara krengy to wo dobara start ni hogi blky jha pr roki thi wahi pr sy start hogi jesy crol krty waqt wo elemet x sy bich me aya pora ni howa or croll hmny agy brha diya to wo whi rok jayga or jb hm dobara oper aygy to wo wahi sy start hoga
 
     }
-
 })
-
-
-// /////////////////////////////////////////////////////////////////////////
-// /////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
 // /////////////////////////////////////////////////////////////////////////
 // /////////////////////////////////////////////////////////////////////////
 
