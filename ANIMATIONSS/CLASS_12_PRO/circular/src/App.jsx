@@ -10,8 +10,10 @@ import  { EffectComposer } from '@react-three/postprocessing'
 function App() {
 
   return ( <Canvas camera={{fov:35}}>
+     {/* canvas screen hoti he jismy 3d effects chlta he ak trha sy laptop ki screen pr iska cover ye wirth hight apny parent sy leta he yani abhi to indewx.html me jo body me div he wo iska parent he hm chahy to div hta pr body ko deden to iska parent wo ho jayga */}
 
 <OrbitControls />
+  {/* isy hm osko ghoma skty hen wo ak orignal box bn jayga */}
 <ambientLight />
 <Aniii/>
 <EffectComposer>
